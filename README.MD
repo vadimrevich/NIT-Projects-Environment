@@ -38,12 +38,7 @@ A User environment for a packages installation of New Internet Technologies Inc.
 
 ### КОНТАКТЫ
 
-По вопросам установки, тестового использования, регистрации обратитесь к автору по e-mail, ICQ 120105414, Messenger и Telegram (@yudenisov), WhatsApp/Viber. Автор не даёт консультации по криминальному использованию этой программы, равно как использование программы террористами и спецслужбами. Такие вопросы обсуждаются
-на соответствующих форумах. :-)
-
-E-mail: yudenisov@mail.ru Subject: NIT
-
-Phone: +7 904 707-1125 (Only for text Messages)
+E-mail: vadimrevich21@gmail.com Subject: NIT
 
 ## DESCRIPTION
 
