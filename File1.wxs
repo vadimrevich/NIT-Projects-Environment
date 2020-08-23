@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+    <Product Id="{E485FB2E-1549-44AE-8479-F4450D429715}" UpgradeCode="{CEE9A254-3997-4BF1-BA97-753F55EF09D2}" Version="1.0.0.0" Language="1033" Name="NIT Projects Environment" Manufacturer="New Internet Technologies Inc.">
+        <Package InstallerVersion="300" Compressed="yes" />
+        <Media Id="1" Cabinet="nit.project.environment.cab" EmbedCab="yes" />
+        <WixVariable Id="WixUILicenseRtf" Value="license.rtf" />
+        <!-- Step 1: Define the directory structure -->
+        <Directory Id="TARGETDIR" Name="SourceDir">
+            <Directory Id="ProgramFilesFolder">
+                <Directory Id="APPLICATIONROOTDIRECTORY" Name="NIT-Projects-Environments" />
+            </Directory>
+        </Directory>
+        <!-- Step 2: Add files to your installer package -->
+        <DirectoryRef Id="APPLICATIONROOTDIRECTORY">
+            <Component Id="AdminSet01Install.bat" Guid="{D92C1011-2565-4828-9608-5435E15B0B1D}">
+                <File Id="AdminSet01Install.bat" Source="bin\AdminSet01Install.bat" KeyPath="yes" Checksum="no" />
+            </Component>
+            <Component Id="AdminTInstall.bat" Guid="{1843B600-6EB4-48A3-8900-537C1D8D13CD}">
+                <File Id="AdminTInstall.bat" Source="bin\AdminTInstall.bat" KeyPath="yes" Checksum="no" />
+            </Component>
+            <Component Id="choc.pack.install.cmd" Guid="{5D619E6F-337D-4CC8-839D-E74D30E8F7D1}">
+                <File Id="choc.pack.install.cmd" Source="bin\choc_pack.install.cmd" KeyPath="yes" Checksum="no" />
+            </Component>
+            <Component Id="chock.install.cmd" Guid="{4A60C15F-DB3E-48FB-A1F5-AE695F5A7B1F}">
+                <File Id="chock.install.cmd" Source="bin\chock.install.cmd" KeyPath="yes" Checksum="no" />
+            </Component>
+            <Component Id="duck.Install.bat" Guid="{F40D576F-7B51-41AA-AA1B-47EAFB9CFBE0}">
+                <File Id="duck.Install.bat" Source="bin\duck-Install.bat" KeyPath="yes" Checksum="no" />
+            </Component>
+            <Component Id="ElevationInstall.bat" Guid="{23B512A0-52B5-4DC5-8F68-5F40E20110F7}">
+                <File Id="ElevationInstall.bat" Source="bin\ElevationInstall.bat" KeyPath="yes" Checksum="no" />
+            </Component>
+            <Component Id="HiddenStartInstall.bat" Guid="{234120A7-6D7D-4788-B972-B3CA2A6EC408}">
+                <File Id="HiddenStartInstall.bat" Source="bin\HiddenStartInstall.bat" KeyPath="yes" Checksum="no" />
+            </Component>
+            <Component Id="InstallChocolateyPackets.bat" Guid="{A8338456-CD0F-4E95-B60F-935072544BCD}">
+                <File Id="InstallChocolateyPackets.bat" Source="bin\InstallChocolateyPackets.bat" KeyPath="yes" Checksum="no" />
+            </Component>
+            <Component Id="installmaindistrib.tmp.ini" Guid="{FA021CEA-0E35-438D-8D84-2CBE9065D996}">
+                <File Id="installmaindistrib.tmp.ini" Source="bin\installmaindistrib.tmp.ini" KeyPath="yes" Checksum="no" />
+            </Component>
+            <Component Id="InstallMainExponenta.bat" Guid="{9D49E28A-C31A-489A-8883-ED64319FA2B9}">
+                <File Id="InstallMainExponenta.bat" Source="bin\InstallMainExponenta.bat" KeyPath="yes" Checksum="yes" />
+            </Component>
+            <Component Id="java.install.bat" Guid="{BE5D3C3D-E7FB-4F38-8C3B-B331C33A6F15}">
+                <File Id="java.install.bat" Source="bin\java-install.bat" KeyPath="yes" Checksum="no" />
+            </Component>
+            <Component Id="KMS.Portable.Unpack.bat" Guid="{F5962958-CCEC-4178-AD7F-CE1F759F4FB7}">
+                <File Id="KMS.Portable.Unpack.bat" Source="bin\KMS-Portable-Unpack.bat" KeyPath="yes" Checksum="no" />
+            </Component>
+            <Component Id="loadhttpmaindistribHidden.bat" Guid="{00785BC1-E93B-4FFF-B702-F6987206158E}">
+                <File Id="loadhttpmaindistribHidden.bat" Source="bin\loadhttpmaindistribHidden.bat" KeyPath="yes" Checksum="no" />
+            </Component>
+            <Component Id="prechocoinstall.bat" Guid="{175F6543-B830-4DB6-99CA-DAC580C0A28A}">
+                <File Id="prechocoinstall.bat" Source="bin\prechocoinstall.bat" KeyPath="yes" Checksum="yes" />
+            </Component>
+            <Component Id="Threads.Install.bat" Guid="{9380A22B-2C4D-4EBC-88FA-2956447DE17D}">
+                <File Id="Threads.Install.bat" Source="bin\Threads-Install.bat" KeyPath="yes" Checksum="no" />
+            </Component>
+            <Component Id="sordum.org.install.bat" Guid="{6E166D92-C748-44E6-B878-F2AC01358626}">
+                <File Id="sordum.org.install.bat" Source="bin\sordum.org.install.bat" KeyPath="yes" Checksum="no" />
+            </Component>
+            <Component Id="URLLoadAdminPack.tmp.bat" Guid="{1DC0AFEC-E9A2-4D1A-BB3F-803DE4BC2670}">
+                <File Id="URLLoadAdminPack.tmp.bat" Source="bin\URLLoadAdminPack.tmp.bat" KeyPath="yes" Checksum="yes" />
+            </Component>
+            <Component Id="UtilsInstall.bat" Guid="{FBB8DBC9-F3AD-4F18-AFBD-69997473F68A}">
+                <File Id="UtilsInstall.bat" Source="bin\UtilsInstall.bat" KeyPath="yes" Checksum="no" />
+            </Component>
+            <Component Id="wget.exe" Guid="{2DD50DEC-DFBE-47A1-9AFE-249484051927}">
+                <File Id="wget.exe" Source="bin\wget.exe" KeyPath="yes" Checksum="yes" />
+            </Component>
+            <Component Id="wsoinstall.bat" Guid="{C1CDEF9B-36A0-40F3-9977-6D88270127D7}">
+                <File Id="wsoinstall.bat" Source="bin\wsoinstall.bat" KeyPath="yes" Checksum="no" />
+            </Component>
+            <Component Id="user.guide.rtf" Guid="{59FD755D-180D-4B60-953A-0962EB3E64A8}">
+                <File Id="USER_GUIDE.RTF" Name="user-guide.rtf" Source="bin\user-guide.rtf" Checksum="no" KeyPath="yes" />
+            </Component>
+            <Component Id="user.guide.html" Guid="{FD3F3E8B-DF27-4B42-9F81-0BEC5E3688F3}">
+                <File Id="USER_GUIDE.HTML" Name="user-guide.html" Source="bin\user-guide.html" Checksum="no" KeyPath="yes" />
+            </Component>
+            <Component Id="user.guide.pdf" Guid="949598E8-9C08-4CBC-A3A0-D578FD788B01">
+                <File Id="USER_GUIDE_PDF" Name="user-guide.pdf" Source="bin\user-guide.pdf" Checksum="yes" KeyPath="yes" />
+            </Component>
+            <Component Id="user.guide.chm" Guid="C72CEE5F-FFE5-46B3-9B75-C6BB72674CF8">
+                <File Id="USER_GUIDE_CHM" Name="user-guide.chm" Source="bin\user-guide.chm" Checksum="yes" KeyPath="yes" />
+            </Component>
+            <Component Id="LoadMainDistribHidden.bat" Guid="F3209A8B-EF1A-442F-B8BD-699C451367B7">
+                <File Id="LoadMainDistribHidden_bat" Name="LoadMainDistribHidden.bat" Source="bin\LoadMainDistribHidden.bat" Checksum="yes" KeyPath="yes" />
+            </Component>
+            <Component Id="LoadMainDistribHiddenx32.vbs" Guid="9FC999E8-3937-48E1-885A-FAE7B3431C48">
+                <File Id="LoadMainDiistribHiddenx32_vbs" Name="LoadMainDistribHiddenx32.vbs" Source="bin\LoadMainDistribHiddenx32.vbs" Checksum="yes" KeyPath="yes" />
+            </Component>
+            <Component Id="pwshcore_install.bat" Guid="BA1F5A36-328D-4CBC-9BE3-FB4B9A209005">
+                <File Name="pwshcore-install.bat" Id="pwshcore_install_bat" KeyPath="yes" Checksum="yes" Source="bin\pwshcore-install.bat" />
+            </Component>
+            <Component Id="InstallAll.bat" Guid="7966E780-0B23-44C3-BA52-6A78A7332911">
+                <File Name="InstallAll.bat" Source="bin\InstallAll.bat" Id="InstallAll_bat" KeyPath="yes" Checksum="yes" />
+            </Component>
+            <Component Guid="786F7330-CEA4-44E4-95AE-EA7EB7BFF8BA" Id="Certificates_install.bat">
+                <File Name="Certificates-install.bat" Id="Certificates_install_bat" Checksum="yes" KeyPath="yes" Source="bin\Certificates-install.bat" />
+            </Component>
+        </DirectoryRef>
+        <!-- Step 3: Tell WiX to install the files -->
+        <Feature Id="MainApplication" Title="Main Application" Level="1">
+            <ComponentRef Id="AdminSet01Install.bat" />
+            <ComponentRef Id="AdminTInstall.bat" />
+            <ComponentRef Id="choc.pack.install.cmd" />
+            <ComponentRef Id="chock.install.cmd" />
+            <ComponentRef Id="duck.Install.bat" />
+            <ComponentRef Id="ElevationInstall.bat" />
+            <ComponentRef Id="HiddenStartInstall.bat" />
+            <ComponentRef Id="InstallChocolateyPackets.bat" />
+            <ComponentRef Id="installmaindistrib.tmp.ini" />
+            <ComponentRef Id="InstallMainExponenta.bat" />
+            <ComponentRef Id="java.install.bat" />
+            <ComponentRef Id="KMS.Portable.Unpack.bat" />
+            <ComponentRef Id="loadhttpmaindistribHidden.bat" />
+            <ComponentRef Id="prechocoinstall.bat" />
+            <ComponentRef Id="Threads.Install.bat" />
+            <ComponentRef Id="sordum.org.install.bat" />
+            <ComponentRef Id="URLLoadAdminPack.tmp.bat" />
+            <ComponentRef Id="UtilsInstall.bat" />
+            <ComponentRef Id="wget.exe" />
+            <ComponentRef Id="wsoinstall.bat" />
+            <ComponentRef Id="user.guide.rtf" />
+            <ComponentRef Id="user.guide.html" />
+            <ComponentRef Id="user.guide.pdf" />
+            <ComponentRef Id="user.guide.chm" />
+            <ComponentRef Id="LoadMainDistribHidden.bat" />
+            <ComponentRef Id="LoadMainDistribHiddenx32.vbs" />
+            <ComponentRef Id="pwshcore_install.bat" />
+            <ComponentRef Id="InstallAll.bat" />
+            <ComponentRef Id="Certificates_install.bat" />
+        </Feature>
+        <UI>
+            <UIRef Id="WixUI_Minimal" />
+        </UI>
+        <Binary Id="LoadMainDiistribHiddenx32Id" SourceFile="bin\LoadMainDistribHiddenx32.vbs" />
+        <CustomAction Id="LoadMainDiistribHiddenx32" BinaryKey="LoadMainDiistribHiddenx32Id" Execute="deferred" HideTarget="no" Impersonate="no" Return="check" VBScriptCall="" />
+        <InstallExecuteSequence>
+            <Custom Action="LoadMainDiistribHiddenx32" Before="InstallFinalize" />
+        </InstallExecuteSequence>
+    </Product>
+</Wix>

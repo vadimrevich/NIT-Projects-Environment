@@ -1,0 +1,51 @@
+= NIT PROJECTS
+Yuri A. Denisov
+v. 1.0.0.0 2019-08-11
+:toc:
+:imagesdir: assets/images
+:man source:   AsciiDoc
+:man version:  1.0.0.0
+:man manual:   NIT Manual
+
+== NAME
+
+nit-project - Инсталлятор окружения для проектов New Internet
+Technologies inc.
+
+== SYNOPSIS
+
+See modules definitions
+
+== DESCRIPTION
+
+New Internet Technologies Environment предназначена для первичной
+конфигурации компьютера перед установкой админ-пака Exponenta.
+Установленная программа скачивает необходимые компоненты из
+Интернета.Программа полезна при начальной инициализации
+компьютера/сервера Windows, расположенного на хостинге. Может также
+устанавливаться на стационарные компьютеры.
+
+Программа представляет собой Wix MSI инсталлятор, устанавливающий в
+папку _Program Files_ основные скрипты для скачки и установки фирменного
+программного обеспечения, а также устанавливающий переменные окружения.
+По соображениям безопасности автоматическая скачка и установка фирменных
+программ заблокирована, и должна производиться вручную из консоли из
+папки с установленной программой. Это сделано с целью «не навреди
+неопытному пользователю».
+
+== AUTHOR
+
+NIT-Projects была написана Юрием Денисовым
+
+== RESOURCES
+
+GitHub:
+http://github.com/yudenisov/NIT-Projects[http://github.com/yudenisov/NIT-Projects]
+
+Main web site: http://yudenisov.ru[http://yudenisov.ru]
+
+== COPYING
+
+Copyright © 2015-2019 Yuri Denisov (yudenisov). Свободное
+распространение данной программы гарантируется модифицированной BSD
+лицензией.

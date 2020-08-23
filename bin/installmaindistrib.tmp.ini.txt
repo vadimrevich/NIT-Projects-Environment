@@ -1,0 +1,26 @@
+rem INI File For MainExponenta Installer
+
+rem Installation Directory
+
+set PUB1=c:\pub1
+set AdminT=c:\Elevation
+set ELEVATION=c:\Elevation
+set UTIL=c:\Util
+
+rem Main Installation Hosts
+
+set Hacker_host1=anticriminalonline.ru
+set httphost=anticriminalonline.ru
+set ftphost=anticriminalonline.ru
+set httpMainFolder=Exponenta
+set httppref=http
+set httpport=80
+set httpuser=
+set httppassword=
+set ftpport=21
+set ftpuser=u0597072_anonym
+set ftppassword=Admin01234
+set ftpMainFolder=Exponenta
+set ftpSubFolder=
+set ftpSubFolder1=
+set ftpFileMask=*
