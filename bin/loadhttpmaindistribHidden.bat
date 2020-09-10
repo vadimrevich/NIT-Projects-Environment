@@ -36,7 +36,7 @@ rem HTTP Port
 rem set httpport=80
 
 rem run Load Distrib Scripts
-call "%curdir%\URLLoadAdminPack.tmp.bat"
+call "%curdir%\URLLoadAdminPack.bat"
 
 rem Run PreChocoInstall.bat
 if not exist "%curdir%\prechocoinstall.bat" goto pass_PreCHInstall

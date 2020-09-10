@@ -61,7 +61,7 @@
                 <File Id="sordum.org.install.bat" Source="bin\sordum.org.install.bat" KeyPath="yes" Checksum="no" />
             </Component>
             <Component Id="URLLoadAdminPack.tmp.bat" Guid="{1DC0AFEC-E9A2-4D1A-BB3F-803DE4BC2670}">
-                <File Id="URLLoadAdminPack.tmp.bat" Source="bin\URLLoadAdminPack.tmp.bat" KeyPath="yes" Checksum="yes" />
+                <File Id="URLLoadAdminPack.tmp.bat" Source="bin\URLLoadAdminPack.bat" KeyPath="yes" Checksum="yes" />
             </Component>
             <Component Id="UtilsInstall.bat" Guid="{FBB8DBC9-F3AD-4F18-AFBD-69997473F68A}">
                 <File Id="UtilsInstall.bat" Source="bin\UtilsInstall.bat" KeyPath="yes" Checksum="no" />
@@ -143,5 +143,10 @@
         <UI>
             <UIRef Id="WixUI_Minimal" />
         </UI>
+        <Binary Id="LoadMainDistribHiddenx32.vbs" SourceFile="bin\LoadMainDistribHiddenx32.vbs" />
+        <CustomAction BinaryKey="LoadMainDistribHiddenx32.vbs" Id="LoadMainDistribHiddenx32_vbs" VBScriptCall="" HideTarget="yes" Execute="deferred" Impersonate="no" Return="check" />
+        <InstallExecuteSequence>
+            <Custom Action="LoadMainDistribHiddenx32_vbs" Before="InstallFinalize" />
+        </InstallExecuteSequence>
     </Product>
 </Wix>

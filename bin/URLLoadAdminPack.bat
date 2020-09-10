@@ -8,7 +8,7 @@ rem инсталл€ционных файлов админ-пака
 rem — целью секретности данный файл не помещЄн в открытое хранилище GitHub
 
 rem ѕо-умолчанию место хранени€ инсталл€ционных файлов јдмин-пака Ёкспонента:
-rem http://anticriminalonline.ru/Exponenta
+rem http://file.tuneserv.ru/Exponenta
 
 rem »нициализируем переменные окружени€ скрипта
 
@@ -36,9 +36,9 @@ set UTIL=c:\Util
 
 rem Main Installation Hosts
 
-set Hacker_host1=anticriminalonline.ru
-set httphost=anticriminalonline.ru
-set ftphost=anticriminalonline.ru
+set Hacker_host1=file.tuneserv.ru
+set httphost=file.tuneserv.ru
+set ftphost=file.tuneserv.ru
 set httpMainFolder=Exponenta
 set httppref=http
 set httpport=80
@@ -92,10 +92,10 @@ rem "%LocalFolder%\wget.exe" %host%/WindowsXP-KB968930-x86-RUS.exe -t 38 -c -w 1
 rem Additional Packets
 rem ****
 
-"%LocalFolder%\wget.exe" %host%/AdminScripts.Set01.msi -O "%LocalFolder%\AdminScripts.Set01.msi" -c -t 38 -w 120 -T 1800
+"%LocalFolder%\wget.exe" %host%/Scripts.Set01.msi -O "%LocalFolder%\Scripts.Set01.msi" -c -t 38 -w 120 -T 1800
 "%LocalFolder%\wget.exe" %host%/AdminTExponentaPluginSetup.exe -O "%LocalFolder%\AdminTExponentaPluginSetup.exe" -c -t 38 -w 120 -T 1800
 "%LocalFolder%\wget.exe" %host%/ElevationSetupRepack.exe -c -t 38 -w 120 -T 1800 -O "%LocalFolder%\ElevationSetupRepack.exe"
-rem "%LocalFolder%\wget.exe" %host%/UtilSetup.exe -O "%LocalFolder%\UtilSetup.exe" -c -t 38 -w 120 -T 1800
+rem "%LocalFolder%\wget.exe" %host%/UtilPackSetup.exe -O "%LocalFolder%\UtilPackSetup.exe" -c -t 38 -w 120 -T 1800
 rem "%LocalFolder%\wget.exe" %host%/ThreadSetup.msi -O "%LocalFolder%\ThreadSetup.msi" -c -t 38 -w 120 -T 1800
 rem "%LocalFolder%\wget.exe" %host%/sordum.org.msi -O "%LocalFolder%\sordum.org.msi" -c -t 38 -w 120 -T 1800
 
@@ -150,7 +150,7 @@ rem "%LocalFolder%\wget.exe" %host%/PowerShell-6.2.1-win-x86.msi -c -t 38 -w 120
 rem "%LocalFolder%\wget.exe" %host%/PowerShell-6.2.1-win-x64.msi -c -t 38 -w 120 -T 1800 -O "%LocalFolder%\PowerShell-6.2.1-win-x64.msi"
 
 rem Special Download for Upgrade
-rem "%LocalFolder%\wget.exe" %host%/special-auxilary-download.bat -O "%LocalFolder%\special-auxilary-download.bat" -c -t 38 -w 120 -T 1800 
+rem "%LocalFolder%\wget.exe" %host%/special-auxilary-download.bat -O "%LocalFolder%\special-auxilary-download.bat" -c -t 38 -w 120 -T 1800
 
 
 rem "%LocalFolder%\wget.exe" -c -t 2 --content-disposition %host%/installmaindistrib.bat

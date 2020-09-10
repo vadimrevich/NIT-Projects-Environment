@@ -39,16 +39,16 @@ rem set httpport=80
 
 rem run Load Distrib Scripts
 
-if not exist "%curdir%URLLoadAdminPack.tmp.bat" goto pass_UrlLoad
+if not exist "%curdir%URLLoadAdminPack.bat" goto pass_UrlLoad
 echo "Download Installers..."
-call "%curdir%URLLoadAdminPack.tmp.bat"
+call "%curdir%URLLoadAdminPack.bat"
 :pass_UrlLoad
 
 rem Run PreChocoInstall.bat
-if not exist "%curdir%prechocoinstall.bat" goto pass_PreCHInstall
-echo "Pre Chocolatey install..."
-call "%curdir%prechocoinstall.bat"
-:pass_PreCHInstall
+rem if not exist "%curdir%prechocoinstall.bat" goto pass_PreCHInstall
+rem echo "Pre Chocolatey install..."
+rem call "%curdir%prechocoinstall.bat"
+rem :pass_PreCHInstall
 
 rem Запускаем инсталлятор Admin Pack "Экспонента"
 

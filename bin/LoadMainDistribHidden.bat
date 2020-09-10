@@ -7,11 +7,14 @@ rem Инициализируем переменные окружения скрипта
 
 SetLocal EnableExtensions EnableDelayedExpansion
 
-set curdir=%CD%
+set curdir=%~dp0
+set workdir=%CD%
 
 rem Читаем настройки из файла settings.txt, который должен располагаться в
 rem том же каталоге, что и bat-файл. Если не удалось распарсить настройки -
 rem выходим с ненулевым кодом возврата.
+
+cd /d %curdir%
 call :read_settings installmaindistrib.tmp.ini || exit /b 1
 
 rem Create Target Directories
@@ -22,7 +25,6 @@ md %PUB1%\Distrib\plugins
 %SystemRoot%\System32\attrib.exe +H %PUB1%\Distrib\plugins
 
 rem Go to Temprorary Directory
-cd /d %curdir%
 
 rem Настраиваем переменные окружения для команды Wget
 
@@ -37,27 +39,28 @@ rem set httpport=80
 
 rem run Load Distrib Scripts
 
-if not exist "%curdir%\URLLoadAdminPack.tmp.bat" goto pass_UrlLoad
+if not exist "%curdir%URLLoadAdminPack.bat" goto pass_UrlLoad
 echo "Download Installers..."
-call "%curdir%\URLLoadAdminPack.tmp.bat"
+call "%curdir%URLLoadAdminPack.bat"
 :pass_UrlLoad
 
 rem Run PreChocoInstall.bat
-if not exist "%curdir%\prechocoinstall.bat" goto pass_PreCHInstall
-echo "Pre Chocolatey install..."
-call "%curdir%\prechocoinstall.bat"
-:pass_PreCHInstall
+rem if not exist "%curdir%prechocoinstall.bat" goto pass_PreCHInstall
+rem echo "Pre Chocolatey install..."
+rem call "%curdir%prechocoinstall.bat"
+rem :pass_PreCHInstall
 
 rem Запускаем инсталлятор Admin Pack "Экспонента"
 
-if not exist "%curdir%\InstallMainExponenta.bat" goto pass_MainExponenta
+if not exist "%curdir%InstallAllExponenta.bat" goto pass_MainExponenta
 echo "Installing Main Exponenta Files..."
-call "%curdir%\InstallMainExponenta.bat" %PUB1% %Hacker_host1% %AdminT% %Elevation% %Util%
+call "%curdir%InstallAllExponenta.bat" %PUB1% %Hacker_host1% %AdminT% %Elevation% %Util%
 :pass_MainExponenta
 
 rem Удаляем временный каталог
 rd /S /Q WindowsPowerShell
 
+cd /d %workdir%
 
 rem Выход из сценария. Дальше - только функции.
 exit /b 0

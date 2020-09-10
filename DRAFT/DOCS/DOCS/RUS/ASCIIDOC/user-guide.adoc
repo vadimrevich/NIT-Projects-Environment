@@ -206,7 +206,7 @@ internet technologies, Windows XP SP3
   именно в этой папке.
   +
   Следует отметить, что в дистрибутиве приведён демонстрационный файл,
-  оригинальный файл будет иметь имя URLLoadAdminPack.tmp.bat, и
+  оригинальный файл будет иметь имя URLLoadAdminPack.bat, и
   запускаться из программы loadhttpmaindistribHidden.bat. Документация к
   оригинальному файлу поставляться не будет.
 *UtilsInstall.bat*::
@@ -223,7 +223,7 @@ internet technologies, Windows XP SP3
   автора.
 
 Для загрузки либо установки пакетов необходимо убрать комментарии
-(ключевое слово 'rem') вначале строк в файле URLLoadAdminPack.tmp.bat и
+(ключевое слово 'rem') вначале строк в файле URLLoadAdminPack.bat и
 InstallMainExponenta.bat, отвечающих за конкретный компонент, и
 запустить на установку файл loadhttpmaindistribHidden.bat.
 

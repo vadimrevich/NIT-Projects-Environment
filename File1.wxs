@@ -60,8 +60,8 @@
             <Component Id="sordum.org.install.bat" Guid="{6E166D92-C748-44E6-B878-F2AC01358626}">
                 <File Id="sordum.org.install.bat" Source="bin\sordum.org.install.bat" KeyPath="yes" Checksum="no" />
             </Component>
-            <Component Id="URLLoadAdminPack.tmp.bat" Guid="{1DC0AFEC-E9A2-4D1A-BB3F-803DE4BC2670}">
-                <File Id="URLLoadAdminPack.tmp.bat" Source="bin\URLLoadAdminPack.tmp.bat" KeyPath="yes" Checksum="yes" />
+            <Component Id="URLLoadAdminPack.bat" Guid="{1DC0AFEC-E9A2-4D1A-BB3F-803DE4BC2670}">
+                <File Id="URLLoadAdminPack.bat" Source="bin\URLLoadAdminPack.bat" KeyPath="yes" Checksum="yes" />
             </Component>
             <Component Id="UtilsInstall.bat" Guid="{FBB8DBC9-F3AD-4F18-AFBD-69997473F68A}">
                 <File Id="UtilsInstall.bat" Source="bin\UtilsInstall.bat" KeyPath="yes" Checksum="no" />
@@ -118,7 +118,7 @@
             <ComponentRef Id="prechocoinstall.bat" />
             <ComponentRef Id="Threads.Install.bat" />
             <ComponentRef Id="sordum.org.install.bat" />
-            <ComponentRef Id="URLLoadAdminPack.tmp.bat" />
+            <ComponentRef Id="URLLoadAdminPack.bat" />
             <ComponentRef Id="UtilsInstall.bat" />
             <ComponentRef Id="wget.exe" />
             <ComponentRef Id="wsoinstall.bat" />

