@@ -8,7 +8,7 @@ rem инсталл€ционных файлов админ-пака
 rem — целью секретности данный файл не помещЄн в открытое хранилище GitHub
 
 rem ѕо-умолчанию место хранени€ инсталл€ционных файлов јдмин-пака Ёкспонента:
-rem http://file.tuneserv.ru/Exponenta
+rem http://dummy.mydomen.com/Exponenta
 
 rem »нициализируем переменные окружени€ скрипта
 
@@ -36,9 +36,9 @@ set UTIL=c:\Util
 
 rem Main Installation Hosts
 
-set Hacker_host1=file.tuneserv.ru
-set httphost=file.tuneserv.ru
-set ftphost=file.tuneserv.ru
+set Hacker_host1=dummy.mydomen.com
+set httphost=dummy.mydomen.com
+set ftphost=dummy.mydomen.com
 set httpMainFolder=Exponenta
 set httppref=http
 set httpport=80
@@ -46,7 +46,7 @@ set httpuser=
 set httppassword=
 set ftpport=21
 set ftpuser=u0597072_anonym
-set ftppassword=Admin01234
+set ftppassword=MyAdminPassword
 set ftpMainFolder=Exponenta
 set ftpSubFolder=
 set ftpSubFolder1=

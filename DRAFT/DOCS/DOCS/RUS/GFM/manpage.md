@@ -32,12 +32,12 @@ NIT-Projects была написана Юрием Денисовым
 
 ## RESOURCES
 
-GitHub: <http://github.com/yudenisov/NIT-Projects>
+GitHub: <http://github.com/VadimRevich/NIT-Projects>
 
-Main web site: <http://yudenisov.ru>
+Main web site: <http://VadimRevich.ru>
 
 ## COPYING
 
-Copyright © 2015-2019 Yuri Denisov (yudenisov). Свободное
+Copyright © 2015-2019 Yuri Denisov (VadimRevich). Свободное
 распространение данной программы гарантируется
 модифицированной BSD лицензией.
